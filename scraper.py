@@ -30,14 +30,14 @@ def send_mail():
     server.starttls()
     server.ehlo()
 
-    server.login('mehtavedant7498@gmail.com','fqrnztcfmugduyeq')
+    server.login('senders_email_id@gmail.com','password@password')
 
     subject='Teri Kehh K Lungaaaaa !! '
     body='CHeck the amazon link:  https://www.amazon.in/Sony-Alpha-Mirrorless-Digital-Camera/dp/B0158SRJVQ/ref=sr_1_11?keywords=sony+dslr&qid=1568131114&s=gateway&sr=8-11'
     msg=f"Subject:{subject}\n\n{body}"
     server.sendmail(
-        'mehtavedant7498@gmail.com',
-        'mehtarajat1772002@gmail.com',
+        'senders_email_id@gmail.com',
+        'receivers_email_id@gmail.com',
         msg
     )
     print("email sent")
